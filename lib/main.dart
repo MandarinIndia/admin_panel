@@ -1,5 +1,6 @@
 import 'package:admin_panel/pages/other_profiles.dart';
 import 'package:admin_panel/pages/selected_profile.dart';
+import 'package:admin_panel/pages/testimonies.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
           )
         )
       ),
-      home: SelectedProfile(),
+      home: TestimoniesPage(),
     );
   }
 }
