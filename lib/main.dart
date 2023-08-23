@@ -1,4 +1,5 @@
 import 'package:admin_panel/pages/other_profiles.dart';
+import 'package:admin_panel/pages/reels.dart';
 import 'package:admin_panel/pages/selected_profile.dart';
 import 'package:admin_panel/pages/services.dart';
 import 'package:admin_panel/pages/testimonies.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
           )
         )
       ),
-      home: ServicesPage(),
+      home: ReelsPage(),
     );
   }
 }
