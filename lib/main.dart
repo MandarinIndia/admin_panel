@@ -1,8 +1,11 @@
+import 'package:admin_panel/pages/dashboard.dart';
 import 'package:admin_panel/pages/other_profiles.dart';
+import 'package:admin_panel/pages/pricing.dart';
 import 'package:admin_panel/pages/reels.dart';
 import 'package:admin_panel/pages/selected_profile.dart';
 import 'package:admin_panel/pages/services.dart';
 import 'package:admin_panel/pages/testimonies.dart';
+import 'package:admin_panel/widgets/graphs/bar%20graph/bar_graph.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -15,6 +18,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<double> weeklySummary = [
+    20,
+    40,
+    50,
+    30,
+    100,
+    80,
+    150
+  ];
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
@@ -28,7 +40,7 @@ class MyApp extends StatelessWidget {
           )
         )
       ),
-      home: ReelsPage(),
+      home: MyBarGraph(weeklySummary: weeklySummary)
     );
   }
 }
